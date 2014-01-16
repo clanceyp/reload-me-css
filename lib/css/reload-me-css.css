@@ -1,0 +1,25 @@
+#reload-me-css {
+    background-color: orange;
+    border-radius: 8px;
+    border:1px solid darkorange;
+    color:#fff;
+    font-size: 10px;
+    left:10px;
+    opacity: 0.8;
+    padding: 2px 10px;
+    position: fixed;
+    top: 10px;
+    z-index: 1001;
+
+    transition: top 500ms ease,
+                opacity 500ms ease,
+                width 500ms ease;
+}
+#reload-me-css.reload-css-disabled {
+    background-color: #444;
+    opacity: 0.2;
+}
+#reload-me-css.reload-css-notstarted {
+    top: -30px;
+    opacity: 0;
+}
