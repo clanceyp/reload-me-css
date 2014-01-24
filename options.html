@@ -178,7 +178,7 @@
 			<nav>
 				<ul>
 					<li><a href="#sectionSettings">Settings</a></li>
-					<li><a href="#sectionAdvancedSettings">Find content</a></li>
+					<!-- <li><a href="#sectionAdvancedSettings">Find content</a></li> -->
 					<li><a href="#sectionDonate">Donate!</a></li>
 					<li><a href="#sectionHowTo">About</a></li>
 				</ul>
@@ -189,7 +189,7 @@
 				<p><strong id="appName"></strong> </p>
 				<p>version:	<strong id="appVersion"></strong></p>
 
-				<span id="forkongithub"><a href="https://github.com/clanceyp/link-audit">Fork me on GitHub</a></span>
+				<span id="forkongithub"><a href="https://github.com/clanceyp/reload-me-css">Fork me on GitHub</a></span>
 
 			</section>
 			<section id="sectionDonate" class="hidden">
@@ -237,36 +237,39 @@
 
 			<fieldset>
 				<h2>Settings</h2>
-				<p>
-					<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Add URLs or parts of URLs you don't want to validate, e.g. google.com or logout.htm</span></span>
-					<label for="blacklist">Blacklist (line separated list)</label>
-					<textarea id="blacklist"></textarea>
-				</p>
-				<p>
-					<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Only needed if checking a list of URLs, a single folder, a single file type etc...</span></span>
-					<label for="whitelist">White list (line separated list)</label>
-					<textarea id="whitelist"></textarea>
-				</p>
-				<p>
-					<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Lower number is slower, but better results</span></span>
-					<label for="maxQueueLength">Concurrent requests, <span id="maxQueueLengthDisplay"></span></label>
-					<input type="range" id="maxQueueLength" min="1" max="100" />
-				</p>
-				<p>
-					<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Show http status code</span></span>
-					<label for="showStatusCode">Show status codes <input type="checkbox" id="showStatusCode" /></label>
-				</p>
-				<p>
-					<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Check local links only</span></span>
-					<label for="validateDomainOnly">Only validate links within the current domain <input type="checkbox" id="validateDomainOnly" /></label>
-				</p>
-				<p>
-					<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Link audit ignores hash differences in URLs to prevent the same URL being validated multiple times</span></span>
-					<label for="ignoreHash">Ignore hash in URLs <input type="checkbox" id="ignoreHash" /></label>
-				</p>
-				<p class="button">
-					<input type="button" class="reset"  value="Reset default options"/>
-				</p>
+				<p>Sorry, this extension has no settings : (</p>
+				<div style="overflow:hidden;width:1px;height:1px;">
+					<p>
+						<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Add URLs or parts of URLs you don't want to validate, e.g. google.com or logout.htm</span></span>
+						<label for="blacklist">Blacklist (line separated list)</label>
+						<textarea id="blacklist"></textarea>
+					</p>
+					<p>
+						<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Only needed if checking a list of URLs, a single folder, a single file type etc...</span></span>
+						<label for="whitelist">White list (line separated list)</label>
+						<textarea id="whitelist"></textarea>
+					</p>
+					<p>
+						<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Lower number is slower, but better results</span></span>
+						<label for="maxQueueLength">Concurrent requests, <span id="maxQueueLengthDisplay"></span></label>
+						<input type="range" id="maxQueueLength" min="1" max="100" />
+					</p>
+					<p>
+						<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Show http status code</span></span>
+						<label for="showStatusCode">Show status codes <input type="checkbox" id="showStatusCode" /></label>
+					</p>
+					<p>
+						<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Check local links only</span></span>
+						<label for="validateDomainOnly">Only validate links within the current domain <input type="checkbox" id="validateDomainOnly" /></label>
+					</p>
+					<p>
+						<span class="more">&nbsp;&nbsp;&nbsp;&nbsp;<span class="help" tabindex="0">Link audit ignores hash differences in URLs to prevent the same URL being validated multiple times</span></span>
+						<label for="ignoreHash">Ignore hash in URLs <input type="checkbox" id="ignoreHash" /></label>
+					</p>
+					<p class="button">
+						<input type="button" class="reset"  value="Reset default options"/>
+					</p>
+				</div>
 			</fieldset>
 			</section>
 

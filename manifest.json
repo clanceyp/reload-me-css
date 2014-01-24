@@ -1,6 +1,7 @@
 {
 	"name": "Reload CSS"
-	,"version": "0.3"
+	,"short_name":"reload-me-css"
+	,"version": "0.7"
 	,"manifest_version": 2
 	,"background":{
 		"scripts": [
@@ -33,6 +34,7 @@
 		,"js":[
             "lib/js/constants.js",
             "lib/js/vendor/zepto.js",
+            "lib/js/vendor/underscore.js",
             "lib/js/content.js"
         ]
 		,"css":["lib/css/reload-me-css.css"]
