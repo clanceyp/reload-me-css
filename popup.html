@@ -10,7 +10,7 @@
 
     <title>Extension options</title>
 
-
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
 
     <style type="text/css">
         @import url(http://fonts.googleapis.com/css?family=Mr+Bedfort);
@@ -59,7 +59,9 @@
             margin:0;
             padding: 0 0 2px 0;
         }
-        label {display:block}
+        label {
+            display:block;
+        }
         .wrapper {
             background-image: linear-gradient(#ccc, #fff);
             border: 1px solid #ccc;
@@ -69,10 +71,34 @@
         button {
             width: 100%;
         }
+        .fileList {
+            background-color: #fff;
+            border-radius: 3px ;
+            max-height: 200px;
+            overflow: scroll;
+        }
+        h1 {
+            position: relative;
+        }
+        h1 .close {
+            cursor: pointer;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            position: absolute;
+            right: 8px;
+            top: 5px;
+        }
+        h1 .close:hover {
+            color: #fff;
+        }
     </style>
+
 </head>
 <body>
-        <h1>Reload CSS</h1>
+        <h1>Reload CSS <a class="close">&#xf057;</a></h1>
     <div class="wrapper">
         <h2>Scope <span data-bind="text: scope"></span></h2>
         <div class="settings">
@@ -92,13 +118,14 @@
         <h2>Select which CSS files to reload</h2>
         <div class="css-files" >
         </div>
-        <div data-bind="foreach: fileList">
-            <label data-bind="attr: { title: $data.url }" >
-                <input type="checkbox" data-bind="checked: $data.checked, attr: { value: $data.label }" />
-                <span data-bind="text: label"></span>
-            </label>
+        <div class="fileList">
+            <div data-bind="foreach: fileList">
+                <label data-bind="attr: { title: $data.url }" >
+                    <input type="checkbox" data-bind="checked: $data.checked, attr: { value: $data.label }" />
+                    <span data-bind="text: label"></span>
+                </label>
+            </div>
         </div>
-
         <h2>Poling frequency <span data-bind="text: frequency"></span></h2>
 
 
