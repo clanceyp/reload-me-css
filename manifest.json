@@ -1,7 +1,7 @@
 {
 	"name": "Reload CSS"
 	,"short_name":"reload-me-css"
-	,"version": "0.9"
+	,"version": "1.1"
 	,"manifest_version": 2
 	,"background":{
 		"scripts": [
